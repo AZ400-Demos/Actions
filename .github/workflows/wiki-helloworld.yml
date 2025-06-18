@@ -1,0 +1,14 @@
+name: WIKI Hello World
+
+on:
+  gollum:
+
+jobs:
+  hello:
+    runs-on: self-hosted
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Say Hello World
+      run: echo "Hello World!"
